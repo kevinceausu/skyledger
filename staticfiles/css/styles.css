@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+}
+
+/* NAVBAR */
+nav {
+    background: #1e272e;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav span {
+    color: #ffd32a;
+    margin-left: 20px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* HEADINGS */
+h1, h2 {
+    color: #2f3640;
+}
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+th {
+    background: #273c75;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f1f2f6;
+}
+
+/* BUTTONS */
+button, .button {
+    background: #273c75;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background: #40739e;
+}
+
+/* FORMS */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+}

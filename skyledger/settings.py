@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-3@dqx1+kclog&v772iua_pw%+3otbz#y=kf*qu%tgm#3a(mzgh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "kevincarlos.pythonanywhere.com",
+]
 
 
 # Application definition
@@ -124,6 +128,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
