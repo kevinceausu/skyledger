@@ -32,6 +32,38 @@
   }
 },
 {
+  "model": "billing.invoice",
+  "pk": 3,
+  "fields": {
+    "invoice_number": "INV003",
+    "booking": 3,
+    "passenger": 6,
+    "issued_by": 4,
+    "issue_date": "2026-04-27",
+    "due_date": "2026-05-04",
+    "status": "ISSUED",
+    "subtotal": "240.00",
+    "tax": "24.00",
+    "total": "264.00"
+  }
+},
+{
+  "model": "billing.invoice",
+  "pk": 4,
+  "fields": {
+    "invoice_number": "INV004",
+    "booking": 4,
+    "passenger": 6,
+    "issued_by": 1,
+    "issue_date": "2026-04-27",
+    "due_date": "2026-05-04",
+    "status": "ISSUED",
+    "subtotal": "20.00",
+    "tax": "2.00",
+    "total": "22.00"
+  }
+},
+{
   "model": "billing.invoiceitem",
   "pk": 1,
   "fields": {
@@ -51,6 +83,28 @@
     "quantity": 2,
     "unit_price": "180.00",
     "line_total": "360.00"
+  }
+},
+{
+  "model": "billing.invoiceitem",
+  "pk": 3,
+  "fields": {
+    "invoice": 3,
+    "description": "invoice for you",
+    "quantity": 1,
+    "unit_price": "240.00",
+    "line_total": "240.00"
+  }
+},
+{
+  "model": "billing.invoiceitem",
+  "pk": 4,
+  "fields": {
+    "invoice": 4,
+    "description": "luggage",
+    "quantity": 1,
+    "unit_price": "20.00",
+    "line_total": "20.00"
   }
 }
 ]

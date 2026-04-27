@@ -30,6 +30,16 @@
   }
 },
 {
+  "model": "flights.airport",
+  "pk": 4,
+  "fields": {
+    "code": "BUC",
+    "name": "Bucharest Airport",
+    "city": "Bucharest",
+    "country": "Romania"
+  }
+},
+{
   "model": "flights.flight",
   "pk": 1,
   "fields": {
@@ -42,6 +52,21 @@
     "capacity": 180,
     "status": "SCHEDULED",
     "created_by": 2
+  }
+},
+{
+  "model": "flights.flight",
+  "pk": 2,
+  "fields": {
+    "flight_number": "BUC200",
+    "origin": 1,
+    "destination": 4,
+    "departure_time": "2026-04-29T12:00:00Z",
+    "arrival_time": "2026-04-29T16:00:00Z",
+    "base_price": "50.00",
+    "capacity": 200,
+    "status": "SCHEDULED",
+    "created_by": 1
   }
 },
 {
@@ -70,6 +95,34 @@
     "passenger_count": 2,
     "status": "CONFIRMED",
     "total_price": "360.00"
+  }
+},
+{
+  "model": "flights.booking",
+  "pk": 3,
+  "fields": {
+    "booking_reference": "BK003",
+    "passenger": 6,
+    "flight": 1,
+    "booking_date": "2026-04-27T02:42:25.038Z",
+    "seat_class": "FIRST",
+    "passenger_count": 1,
+    "status": "CONFIRMED",
+    "total_price": "240.00"
+  }
+},
+{
+  "model": "flights.booking",
+  "pk": 4,
+  "fields": {
+    "booking_reference": "BK004",
+    "passenger": 6,
+    "flight": 1,
+    "booking_date": "2026-04-27T04:20:32.273Z",
+    "seat_class": "ECONOMY",
+    "passenger_count": 1,
+    "status": "PENDING",
+    "total_price": "120.00"
   }
 }
 ]
