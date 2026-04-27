@@ -1,0 +1,16 @@
+[
+{
+  "model": "support.supportticket",
+  "pk": 1,
+  "fields": {
+    "passenger": 3,
+    "assigned_to": 5,
+    "booking": 1,
+    "subject": "Need help with booking confirmation",
+    "message": "I would like to confirm that my booking is active and correctly linked to my invoice.",
+    "status": "OPEN",
+    "created_at": "2026-04-13T12:40:59.753Z",
+    "updated_at": "2026-04-13T12:40:59.753Z"
+  }
+}
+]

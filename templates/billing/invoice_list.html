@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.role == "BILLING_OFFICER" or user.is_superuser %}
+    <a href="/billing/create/">Create Invoice</a>
+{% endif %}
+
+<h1>Invoices</h1>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Invoice</th>
+        <th>Passenger</th>
+        <th>Booking</th>
+        <th>Status</th>
+        <th>Total</th>
+        <th>View</th>
+    </tr>
+
+    {% for invoice in invoices %}
+    <tr>
+        <td>{{ invoice.invoice_number }}</td>
+        <td>{{ invoice.passenger.username }}</td>
+        <td>{{ invoice.booking.booking_reference }}</td>
+        <td>{{ invoice.status }}</td>
+        <td>{{ invoice.total }}</td>
+        <td>
+            <a href="/billing/{{ invoice.id }}/" class="btn btn-primary mb-3">View</a>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

@@ -1,0 +1,102 @@
+[
+{
+  "model": "accounts.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$lizBuMlRyhRBBjHZGe68hD$HqdiWlfj4h9D8qE5eTUdB+YYTamsilSJM5VXEwseEAA=",
+    "last_login": "2026-04-13T12:41:30.689Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:40:55.345Z",
+    "role": "FLIGHT_MANAGER",
+    "phone": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$oR4RCt3BV4wr7DhskmZaPf$1rpgLqAkbA1YZnB7ABFR17S/8b2M8nRHhkDNL/4JUoQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "manager1",
+    "first_name": "",
+    "last_name": "",
+    "email": "manager1@skyledger.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:40:56.217Z",
+    "role": "FLIGHT_MANAGER",
+    "phone": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$IwHJgVNdkJD5Sbz57uN1A6$/glfsKmHeF1hOL01SYA6wda7TWSahwFbFawQD9YcwsU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1",
+    "first_name": "",
+    "last_name": "",
+    "email": "user1@user1.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:40:57.087Z",
+    "role": "PASSENGER",
+    "phone": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ic7IW97WrCZHVfMnDD8G7J$rvS7SX7cbKhP2vD/YhI5gau36OGLMUWBi4JenY1pN74=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "billing1",
+    "first_name": "",
+    "last_name": "",
+    "email": "billing1@skyledger.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:40:57.962Z",
+    "role": "BILLING_OFFICER",
+    "phone": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.customuser",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$hZwSB5fJ7ZzaWijgXHS5oI$8iP+2LqwetxdqZacK1E0fe+AFA+b+VZBTPxDZ/fUKc4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "support1",
+    "first_name": "",
+    "last_name": "",
+    "email": "support1@skyledger.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-13T12:40:58.834Z",
+    "role": "SUPPORT_AGENT",
+    "phone": null,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

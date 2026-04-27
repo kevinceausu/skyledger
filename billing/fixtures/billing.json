@@ -1,0 +1,56 @@
+[
+{
+  "model": "billing.invoice",
+  "pk": 1,
+  "fields": {
+    "invoice_number": "INV001",
+    "booking": 1,
+    "passenger": 3,
+    "issued_by": 4,
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-20",
+    "status": "ISSUED",
+    "subtotal": "120.00",
+    "tax": "12.00",
+    "total": "132.00"
+  }
+},
+{
+  "model": "billing.invoice",
+  "pk": 2,
+  "fields": {
+    "invoice_number": "INV002",
+    "booking": 2,
+    "passenger": 3,
+    "issued_by": 4,
+    "issue_date": "2026-04-13",
+    "due_date": "2026-04-20",
+    "status": "ISSUED",
+    "subtotal": "360.00",
+    "tax": "36.00",
+    "total": "396.00"
+  }
+},
+{
+  "model": "billing.invoiceitem",
+  "pk": 1,
+  "fields": {
+    "invoice": 1,
+    "description": "Flight Fare",
+    "quantity": 1,
+    "unit_price": "120.00",
+    "line_total": "120.00"
+  }
+},
+{
+  "model": "billing.invoiceitem",
+  "pk": 2,
+  "fields": {
+    "invoice": 2,
+    "description": "Flight Fare (Business Class)",
+    "quantity": 2,
+    "unit_price": "180.00",
+    "line_total": "360.00"
+  }
+}
+]

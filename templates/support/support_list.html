@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.role == "PASSENGER" %}
+    <a href="/support/create/">Create Support Ticket</a>
+{% endif %}
+
+<h1>Support Tickets</h1>
+
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Subject</th>
+        <th>Passenger</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+        <th>Booking</th>
+        <th>View</th>
+    </tr>
+
+    {% for ticket in tickets %}
+    <tr>
+        <td>{{ ticket.subject }}</td>
+        <td>{{ ticket.passenger.username }}</td>
+        <td>
+            {% if ticket.assigned_to %}
+                {{ ticket.assigned_to.username }}
+            {% else %}
+                Unassigned
+            {% endif %}
+        </td>
+        <td>{{ ticket.status }}</td>
+        <td>
+            {% if ticket.booking %}
+                {{ ticket.booking.booking_reference }}
+            {% endif %}
+        </td>
+        <td>
+            <a href="/support/{{ ticket.id }}/" class="btn btn-primary mb-3">View</a>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

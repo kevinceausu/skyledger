@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ ticket.subject }}</h1>
+
+<p><strong>Passenger:</strong> {{ ticket.passenger.username }}</p>
+
+<p><strong>Assigned To:</strong>
+    {% if ticket.assigned_to %}
+        {{ ticket.assigned_to.username }}
+    {% else %}
+        Unassigned
+    {% endif %}
+</p>
+
+<p><strong>Status:</strong> {{ ticket.status }}</p>
+
+<p><strong>Booking:</strong>
+    {% if ticket.booking %}
+        {{ ticket.booking.booking_reference }}
+    {% endif %}
+</p>
+
+<p><strong>Message:</strong></p>
+<p>{{ ticket.message }}</p>
+
+<p><strong>Created:</strong> {{ ticket.created_at }}</p>
+<p><strong>Updated:</strong> {{ ticket.updated_at }}</p>
+
+{% endblock %}

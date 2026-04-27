@@ -1,0 +1,75 @@
+[
+{
+  "model": "flights.airport",
+  "pk": 1,
+  "fields": {
+    "code": "DUB",
+    "name": "Dublin Airport",
+    "city": "Dublin",
+    "country": "Ireland"
+  }
+},
+{
+  "model": "flights.airport",
+  "pk": 2,
+  "fields": {
+    "code": "LHR",
+    "name": "Heathrow Airport",
+    "city": "London",
+    "country": "UK"
+  }
+},
+{
+  "model": "flights.airport",
+  "pk": 3,
+  "fields": {
+    "code": "CDG",
+    "name": "Charles de Gaulle Airport",
+    "city": "Paris",
+    "country": "France"
+  }
+},
+{
+  "model": "flights.flight",
+  "pk": 1,
+  "fields": {
+    "flight_number": "SK101",
+    "origin": 1,
+    "destination": 2,
+    "departure_time": "2026-04-14T12:40:59.708Z",
+    "arrival_time": "2026-04-14T14:40:59.708Z",
+    "base_price": "120.00",
+    "capacity": 180,
+    "status": "SCHEDULED",
+    "created_by": 2
+  }
+},
+{
+  "model": "flights.booking",
+  "pk": 1,
+  "fields": {
+    "booking_reference": "BK001",
+    "passenger": 3,
+    "flight": 1,
+    "booking_date": "2026-04-13T12:40:59.715Z",
+    "seat_class": "ECONOMY",
+    "passenger_count": 1,
+    "status": "CONFIRMED",
+    "total_price": "120.00"
+  }
+},
+{
+  "model": "flights.booking",
+  "pk": 2,
+  "fields": {
+    "booking_reference": "BK002",
+    "passenger": 3,
+    "flight": 1,
+    "booking_date": "2026-04-13T12:40:59.720Z",
+    "seat_class": "BUSINESS",
+    "passenger_count": 2,
+    "status": "CONFIRMED",
+    "total_price": "360.00"
+  }
+}
+]

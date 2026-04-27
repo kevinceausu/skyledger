@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<h1>Welcome to SkyLedger Airlines</h1>
+
+<p>
+    SkyLedger is an airline booking and billing system that allows passengers to
+    view flights, make bookings, and manage invoices.
+</p>
+
+<hr>
+
+{% load static %}
+
+<div style="margin-bottom: 20px;">
+    <img src="{% static 'images/airport.png' %}" 
+         style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px;">
+</div>
+
+<hr>
+
+{% if show_overview %}
+    <h2>System Overview</h2>
+
+    <ul>
+        <li>Flights: {{ flight_count }}</li>
+        <li>Bookings: {{ booking_count }}</li>
+        <li>Invoices: {{ invoice_count }}</li>
+        <li>Support Tickets: {{ ticket_count }}</li>
+    </ul>
+{% endif %}
+
+{% endblock %}
